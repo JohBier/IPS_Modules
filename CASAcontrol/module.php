@@ -2,23 +2,16 @@
 
     // Klassendefinition
     class CASAcontrol extends IPSModule {
- 
-        // Der Konstruktor des Moduls
-        // Überschreibt den Standard Kontruktor von IPS
-        public function __construct($InstanceID) {
-            // Diese Zeile nicht löschen
-            parent::__construct($InstanceID);
- 
-            // Selbsterstellter Code
-        }
+
+
  
         // Überschreibt die interne IPS_Create($id) Funktion
         public function Create() {
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$this->RegisterPropertyString("stelle1", "192.168.0.0");
-			$this->RegisterPropertyString("stelle2", "0231330c160c");
+			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
+			$this->RegisterPropertyString("Serial", "0231330c160c");
 			$this->RegisterPropertyString("Kanal", "00");
 			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
