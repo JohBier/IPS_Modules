@@ -17,10 +17,10 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$Ip = $this->RegisterPropertyString("NEW_IPAddr", "");
-			$Sn = $this->RegisterPropertyString("NEW_Serial", "");
-			$this->RegisterPropertyString("NEW_Kanal", "00");
-			$this->RegisterPropertyString("NEW_Modul", "PowerPlug");			
+			$Ip = $this->RegisterPropertyString("IPAddr", "");
+			$Sn = $this->RegisterPropertyString("Serial", "");
+			$this->RegisterPropertyString("Kanal", "00");
+			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
         }
  
@@ -29,8 +29,8 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			$Ip = $this->ReadPropertyString("NEW_IPAddr");
-			$Sn = $this->ReadPropertyString("NEW_Serial");
+			$Ip = $this->ReadPropertyString("IPAddr");
+			$Sn = $this->ReadPropertyString("Serial");
         }
  
         /**
