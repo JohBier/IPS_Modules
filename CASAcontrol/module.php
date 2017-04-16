@@ -17,8 +17,8 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$Ip = $this->RegisterPropertyString("IPAddr", "");
-			$Sn = $this->RegisterPropertyString("Serial", "");
+			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
+			$this->RegisterPropertyString("Serial", "0231330c160c");
 			$this->RegisterPropertyString("Kanal", "00");
 			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
