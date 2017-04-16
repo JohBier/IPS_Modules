@@ -17,8 +17,8 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$this->RegisterPropertyString("IPAddr", "");
-			$this->RegisterPropertyString("Serial", "");
+			$Ip = $this->RegisterPropertyString("IPAddr", "");
+			$Sn = $this->RegisterPropertyString("Serial", "");
 			$this->RegisterPropertyString("Kanal", "00");
 			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
@@ -29,8 +29,8 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			$IPAddr = $this->ReadPropertyString("IPAddr");
-			$Serial = $this->ReadPropertyInteger("Serial");
+			$Ip = $this->ReadPropertyString("IPAddr");
+			$Sn = $this->ReadPropertyString("Serial");
         }
  
         /**
@@ -40,9 +40,9 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
-        public function on($IPAddr, $Serial, $Kanal) 
+        public function on($Ip, $Sn, $Kanal) 
 		{
-            $url1 = "http://".$IPAddr."/txcomm.asp";
+            $url1 = "http://".$Ip."/txcomm.asp";
 
 			// create curl resource
 			$ch = curl_init();
@@ -59,7 +59,7 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
 
-			$url2 = "http://".$IPAddr."192.168.178.123/goform/commtx?command=:02:01:00:12&serialn=".$Serial;
+			$url2 = "http://".$Ip."192.168.178.123/goform/commtx?command=:02:01:00:12&serialn=".$Sn;
 
 			// create curl resource
 			$ch = curl_init();
