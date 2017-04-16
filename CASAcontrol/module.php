@@ -17,8 +17,8 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
-			$this->RegisterPropertyString("Serial", "0231330c160c");
+			$this->RegisterPropertyString("stelle1", "192.168.0.0");
+			$this->RegisterPropertyString("stelle2", "0231330c160c");
 			$this->RegisterPropertyString("Kanal", "00");
 			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
@@ -29,8 +29,8 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			$Sn = $this->ReadPropertyString("Serial");
-			$Ip = $this->ReadPropertyString("IPAddr");
+			$Sn = $this->ReadPropertyString("stelle3");
+			$Ip = $this->ReadPropertyString("stelle4");
         }
  
         /**
@@ -59,7 +59,7 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
 
-			$url2 = "http://".$Ip."192.168.178.123/goform/commtx?command=:02:01:00:12&serialn=".$Sn;
+			$url2 = "http://".$Ip."/goform/commtx?command=:02:01:00:12&serialn=".$Sn;
 
 			// create curl resource
 			$ch = curl_init();
