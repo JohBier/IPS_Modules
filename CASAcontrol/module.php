@@ -20,6 +20,7 @@
 			$this->RegisterPropertyString("IPAddr", "");
 			$this->RegisterPropertyString("Serial", "");
 			$this->RegisterPropertyString("Kanal", "00");
+			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
         }
  
