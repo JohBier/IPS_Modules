@@ -29,8 +29,8 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			$Ip = $this->ReadPropertyString("IPAddr");
 			$Sn = $this->ReadPropertyString("Serial");
+			$Ip = $this->ReadPropertyString("IPAddr");
         }
  
         /**
