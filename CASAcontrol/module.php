@@ -35,7 +35,7 @@
         */
         public function on($Ip, $Sn, $Kanal) 
 		{
-            $url1 = "http://".$Ip."/txcomm.asp";
+            $url1 = "http://192.168.178.123/txcomm.asp";
 
 			// create curl resource
 			$ch = curl_init();
@@ -52,7 +52,7 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
 
-			$url2 = "http://".$Ip."/goform/commtx?command=:02:01:00:12&serialn=".$Sn;
+			$url2 = "http://192.168.178.123/goform/commtx?command=:02:01:00:11&serialn=0231330c160c";
 
 			// create curl resource
 			$ch = curl_init();
