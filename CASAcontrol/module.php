@@ -10,10 +10,10 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
-			$this->RegisterPropertyString("Serial", "0231330c160c");
-			$this->RegisterPropertyString("Kanal", "00");
-			$this->RegisterPropertyString("Modul", "PowerPlug");			
+			$this->IPS_SetProperty("IPAddr", "192.168.0.0");
+			$this->IPS_SetProperty("Serial", "0231330c160c");
+			$this->IPS_SetProperty("Kanal", "00");
+			$this->IPS_SetProperty("Modul", "PowerPlug");			
  
         }
  
