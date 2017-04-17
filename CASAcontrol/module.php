@@ -22,10 +22,6 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			$sn = $this->ReadPropertyString("Serial");
-			$Ip = $this->ReadPropertyString("IPAddr");
-			$Chan = $this->ReadPropertyString("Kanal");
-			$Mod = $this->ReadPropertyString("Modul");
         }
  
         /**
@@ -35,8 +31,13 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
-        public function on($Ip, $Sn, $Chan) 
+        public function on() 
 		{
+		
+			$sn = $this->ReadPropertyString("Serial");
+			$Ip = $this->ReadPropertyString("IPAddr");
+			$Chan = $this->ReadPropertyString("Kanal");
+			$Mod = $this->ReadPropertyString("Modul");
 			
             $url1 = "http://" . $Ip . "/txcomm.asp";
 
