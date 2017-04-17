@@ -31,7 +31,7 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
-        public function on() 
+        public function on($id) 
 		{
 		
 			$sn = $this->ReadPropertyString("Serial");
