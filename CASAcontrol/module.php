@@ -31,7 +31,7 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
-        public function on($id) 
+        public function on($id = null) 
 		{
 		
 			$sn = $this->ReadPropertyString("Serial");
@@ -39,7 +39,7 @@
 			$Chan = $this->ReadPropertyString("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
 			
-            $url1 = "http://" . $Ip . "/txcomm.asp";
+            $url1 = "http://192.168.178.123/txcomm.asp";
 
 			// create curl resource
 			$ch = curl_init();
