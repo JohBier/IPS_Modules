@@ -10,10 +10,10 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			//$this->IPS_SetProperty("IPAddr", "192.168.0.0");
-			$this->IPS_SetProperty("Serial", "0231330c160c");
-			$this->IPS_SetProperty("Kanal", "00");
-			$this->IPS_SetProperty("Modul", "PowerPlug");			
+			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
+			$this->RegisterPropertyString("Serial", "0231330c160c");
+			$this->RegisterPropertyString("Kanal", "00");
+			$this->RegisterPropertyString("Modul", "PowerPlug");			
  
         }
  
@@ -22,8 +22,6 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			//$Sn = $this->ReadPropertyString("Serial");
-			//$Ip = $this->ReadPropertyString("IPAddr");
         }
  
         /**
@@ -35,7 +33,13 @@
         */
         public function on($Ip, $Sn, $Kanal) 
 		{
-            $url1 = "http://192.168.178.123/txcomm.asp";
+		
+			$sn = $this->ReadPropertyString("Serial");
+			$Ip = $this->ReadPropertyString("IPAddr");
+			$Chan = $this->ReadPropertyString("Kanal");
+			$Mod = $this->ReadPropertyString("Modul");
+			
+            $url1 = "http://" . $Ip . "/txcomm.asp";
 
 			// create curl resource
 			$ch = curl_init();
