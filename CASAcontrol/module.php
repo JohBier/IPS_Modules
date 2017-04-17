@@ -10,7 +10,7 @@
             // Diese Zeile nicht löschen.
             parent::Create();
 			
-			$this->IPS_SetProperty("IPAddr", "192.168.0.0");
+			//$this->IPS_SetProperty("IPAddr", "192.168.0.0");
 			$this->IPS_SetProperty("Serial", "0231330c160c");
 			$this->IPS_SetProperty("Kanal", "00");
 			$this->IPS_SetProperty("Modul", "PowerPlug");			
