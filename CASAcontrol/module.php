@@ -34,11 +34,11 @@
         public function on($id = null) 
 		{
 		
-			$sn = $this->ReadPropertyString("Serial");
+			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
 			$Chan = $this->ReadPropertyString("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
-			print($sn);
+			print($Sn);
             $url1 = "http://192.168.178.123/txcomm.asp";
 
 			// create curl resource
@@ -56,7 +56,7 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
 
-			$url2 = "http://192.168.178.123/goform/commtx?command=:02:01:00:11&serialn=0231330c160c";
+			$url2 = "http://192.168.178.123/goform/commtx?command=:02:01:00:11&serialn=".$Sn;
 
 			// create curl resource
 			$ch = curl_init();
