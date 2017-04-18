@@ -36,7 +36,7 @@
 		{
 			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
-			$Chan = $this->ReadPropertyString("Kanal");
+			$Chan = $this->ReadPropertyInteger("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
 			
 			$url1 = "http://".$Ip."/txcomm.asp";
