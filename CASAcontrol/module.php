@@ -77,7 +77,7 @@
         public function on($id = null) 
 		{
 			
-			NEW_send();
+			NEW_send($id);
             /*
 			$url1 = "http://".$Ip."/txcomm.asp";
 
