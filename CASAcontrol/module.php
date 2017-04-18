@@ -77,7 +77,7 @@
 			$Chan = $this->ReadPropertyString("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
 			
-			send($Sn, $Ip, $Chan, $Command);
+			NEW_send($Sn, $Ip, $Chan, $Command);
             /*
 			$url1 = "http://".$Ip."/txcomm.asp";
 
