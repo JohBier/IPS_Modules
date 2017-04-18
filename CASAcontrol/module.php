@@ -32,7 +32,7 @@
         *
         */
 		
-		public function send($Ip, $Sn, $Chan, $Command)
+		public function send(string $Ip, string $Sn, string $Chan, string $Command)
 		{
 			$url1 = "http://".$Ip."/txcomm.asp";
 
