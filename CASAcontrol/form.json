@@ -36,17 +36,17 @@
     {
       "type": "Button",
       "label": "Pair Modul",
-      "onClick": "NEW_pair("E5AA629B-75BD-45C0-9BCB-845C102B0411");"
+      "onClick": "NEW_pair($id);"
     },
     {
       "type": "Button",
       "label": "Modul an",
-      "onClick": "NEW_on("E5AA629B-75BD-45C0-9BCB-845C102B0411");"
+      "onClick": "NEW_on($id);"
     },
     {
       "type": "Button",
       "label": "Modul aus",
-      "onClick": "NEW_off("E5AA629B-75BD-45C0-9BCB-845C102B0411");"
+      "onClick": "NEW_off($id);"
     }
   ],
   "status": []
