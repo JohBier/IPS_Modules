@@ -56,7 +56,7 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
 
-			$url2 = "http://".$Ip."/goform/commtx?command=:02:01:00:11&serialn=".$Sn;
+			$url2 = "http://".$Ip."/goform/commtx?command=:02:01:00:".$Cmd."&serialn=".$Sn;
 
 			// create curl resource
 			$ch = curl_init();
@@ -77,7 +77,7 @@
         public function on($id = null) 
 		{
 			
-			$this->send($id, "01");
+			$this->send($id, "11");
             /*
 			$url1 = "http://".$Ip."/txcomm.asp";
 
