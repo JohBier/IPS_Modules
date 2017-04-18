@@ -40,7 +40,7 @@
     {
       "type": "Button",
       "label": "Modul an",
-      "onClick": "NEW_on($id);"
+      "onClick": "NEW_on(10000);"
     },
     {
       "type": "Button",
