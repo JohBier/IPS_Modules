@@ -36,9 +36,9 @@
 		{
 			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
-			$Chan = $this->ReadPropertyInteger("Kanal");
+			$Chan = $this->ReadPropertyString("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
-			
+	
 			$url1 = "http://".$Ip."/txcomm.asp";
 
 			// create curl resource

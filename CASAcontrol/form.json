@@ -11,10 +11,9 @@
       "caption": "Seriennummer"
     },
     {
-      "type": "NumberSpinner",
+      "type": "ValidationTextBox",
       "name": "Kanal",
-      "caption": "Kanal (FF)",
-      "hex": true
+      "caption": "Kanal hex(FF)",
     },
     {
       "type": "Select",
