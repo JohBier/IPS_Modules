@@ -38,7 +38,7 @@
 			$Ip = $this->ReadPropertyString("IPAddr");
 			$Chan = $this->ReadPropertyString("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
-			echo $sn;
+			print($sn);
             $url1 = "http://192.168.178.123/txcomm.asp";
 
 			// create curl resource
