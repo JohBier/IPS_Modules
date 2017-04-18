@@ -11,7 +11,7 @@
             parent::Create();
 			
 			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
-			$this->RegisterPropertyString("Serial", "0231330c160c");
+			$this->RegisterPropertyString("Serial", "023100000000");
 			$this->RegisterPropertyString("Kanal", "00");
 			$this->RegisterPropertyString("Modul", 0);			
  
@@ -40,7 +40,7 @@
 			$Mod = $this->ReadPropertyString("Modul");
 			print($Sn);
 			
-            $url1 = "http://192.168.178.123/txcomm.asp";
+            $url1 = "http://".$Ip."/txcomm.asp";
 
 			// create curl resource
 			$ch = curl_init();
