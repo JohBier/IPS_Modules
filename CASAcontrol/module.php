@@ -32,7 +32,7 @@
         *
         */
 		
-		public function send()
+		public function send($id = null)
 		{
 			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
