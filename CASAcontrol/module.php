@@ -32,7 +32,7 @@
         *
         */
 		
-		public function send($id = null)
+		public function send($id = null, String $Cmd)
 		{
 			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
@@ -77,7 +77,7 @@
         public function on($id = null) 
 		{
 			
-			$this->send($id);
+			$this->send($id, "01");
             /*
 			$url1 = "http://".$Ip."/txcomm.asp";
 
