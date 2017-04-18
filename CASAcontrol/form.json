@@ -13,7 +13,7 @@
     {
       "type": "NumberSpinner",
       "name": "Kanal",
-      "caption": "Kanal",
+      "caption": "Kanal (FF)",
       "hex": true
     },
     {
