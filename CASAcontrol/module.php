@@ -78,46 +78,14 @@
 		{
 			
 			$this->send($id, "11");
-            /*
-			$url1 = "http://".$Ip."/txcomm.asp";
 
-			// create curl resource
-			$ch = curl_init();
-
-			// set url
-			curl_setopt($ch, CURLOPT_URL, $url1);
-
-			//return the transfer as a string 
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-			// $output contains the output string
-			$response1 = curl_exec($ch);
-
-			// close curl resource to free up system resources
-			curl_close($ch);
-
-			$url2 = "http://".$Ip."/goform/commtx?command=:02:01:00:11&serialn=".$Sn;
-
-			// create curl resource
-			$ch = curl_init();
-
-			// set url
-			curl_setopt($ch, CURLOPT_URL, $url2);
-
-			//return the transfer as a string 
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-			// $output contains the output string
-			$response2 = curl_exec($ch);
-
-			// close curl resource to free up system resources
-			curl_close($ch);
-			*/
         }
 		
 		public function off($id = null) 
 		{
 		
+			$this->send($id, "12");
+			/*
 			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
 			$Chan = $this->ReadPropertyString("Kanal");
@@ -156,6 +124,7 @@
 
 			// close curl resource to free up system resources
 			curl_close($ch);
+			*/
         }
 		public function pair($id = null) 
 		{
