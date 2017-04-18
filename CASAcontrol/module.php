@@ -32,8 +32,13 @@
         *
         */
 		
-		public function send(string $Ip, string $Sn, string $Chan, string $Command)
+		public function send()
 		{
+			$Sn = $this->ReadPropertyString("Serial");
+			$Ip = $this->ReadPropertyString("IPAddr");
+			$Chan = $this->ReadPropertyString("Kanal");
+			$Mod = $this->ReadPropertyString("Modul");
+			
 			$url1 = "http://".$Ip."/txcomm.asp";
 
 			// create curl resource
@@ -72,12 +77,7 @@
         public function on($id = null) 
 		{
 			
-			$Sn = $this->ReadPropertyString("Serial");
-			$Ip = $this->ReadPropertyString("IPAddr");
-			$Chan = $this->ReadPropertyString("Kanal");
-			$Mod = $this->ReadPropertyString("Modul");
-			
-			NEW_send("E5AA629B-75BD-45C0-9BCB-845C102B0411", $Sn, $Ip, $Chan, $Command);
+			NEW_send();
             /*
 			$url1 = "http://".$Ip."/txcomm.asp";
 

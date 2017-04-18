@@ -1,21 +1,6 @@
 {
   "elements": [
-    {
-      "type": "ValidationTextBox",
-      "name": "IPAddr",
-      "caption": "IP Adresse"
-    },
-    {
-      "type": "ValidationTextBox",
-      "name": "Serial",
-      "caption": "Seriennummer"
-    },
-    {
-      "type": "NumberSpinner",
-      "name": "Kanal",
-      "caption": "Kanal",
-      "hex": true
-    },
+
     {
       "type": "Select",
       "name": "Modul",
@@ -33,6 +18,22 @@
     }
   ],
   "actions": [
+    {
+      "type": "ValidationTextBox",
+      "name": "IPAddr",
+      "caption": "IP Adresse"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "Serial",
+      "caption": "Seriennummer"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "Kanal",
+      "caption": "Kanal",
+      "hex": true
+    },
     {
       "type": "Button",
       "label": "Pair Modul",
