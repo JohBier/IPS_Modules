@@ -1,1 +1,14 @@
-{"id":"{E1878F0B-D68F-4D80-BC95-322368947823}","name":"CASAcontrol","type":0,"vendor":"","aliases":["PowerPlug","PowerSocket"],"parentRequirements":[],"childRequirements":[],"implemented":[],"prefix":"NEW"}
+{
+  "id": "{E1878F0B-D68F-4D80-BC95-322368947823}",
+  "name": "CASAcontrol",
+  "type": 0,
+  "vendor": "",
+  "aliases": [
+    "PowerPlug",
+    "PowerSocket"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "NEW"
+}
