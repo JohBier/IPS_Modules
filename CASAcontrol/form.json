@@ -36,7 +36,7 @@
     {
       "type": "Button",
       "label": "Pair Modul",
-      "onClick": "pair($IPAddr, $Serial, $Kanal);"
+      "onClick": "pair($id);"
     },
     {
       "type": "Button",
@@ -46,7 +46,7 @@
     {
       "type": "Button",
       "label": "Modul aus",
-      "onClick": "off($IPAddr, $Serial, $Kanal);"
+      "onClick": "off($id);"
     }
   ],
   "status": []
