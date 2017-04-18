@@ -50,5 +50,9 @@
       "onClick": "NEW_off($id);"
     }
   ],
-  "status": []
+  "status": [
+  { "code": 102, 
+	"icon": "active", 
+	"caption": "Instanz ist aktiv" }
+  ]
 }
