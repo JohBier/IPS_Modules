@@ -73,9 +73,8 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
         }
-    }
-
-	public function off($id = null) 
+		
+		public function off($id = null) 
 		{
 		
 			$Sn = $this->ReadPropertyString("Serial");
@@ -118,6 +117,7 @@
 			curl_close($ch);
         }
     }
+
 
 
 	/*	$sn_id = IPS_GetVariableIDByName("Seriennummer", 57518);
