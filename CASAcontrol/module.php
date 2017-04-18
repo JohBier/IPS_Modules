@@ -39,6 +39,7 @@
 			$Chan = $this->ReadPropertyString("Kanal");
 			$Mod = $this->ReadPropertyString("Modul");
 			print($Sn);
+			
             $url1 = "http://192.168.178.123/txcomm.asp";
 
 			// create curl resource
@@ -56,7 +57,7 @@
 			// close curl resource to free up system resources
 			curl_close($ch);
 
-			$url2 = "http://192.168.178.123/goform/commtx?command=:02:01:00:11&serialn=".$Sn;
+			$url2 = "http://".$Ip."/goform/commtx?command=:02:01:00:11&serialn=".$Sn;
 
 			// create curl resource
 			$ch = curl_init();
