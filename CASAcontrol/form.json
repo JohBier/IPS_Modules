@@ -41,7 +41,7 @@
     {
       "type": "Button",
       "label": "Modul an",
-      "onClick": "NEW_on($id=null);"
+      "onClick": "NEW_on($id);"
     },
     {
       "type": "Button",
