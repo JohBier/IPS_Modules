@@ -21,7 +21,7 @@
         public function ApplyChanges() {
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
-		/*	
+			
 			$VarID_Switch = IPS_CreateVariable(0);
 			IPS_SetName($VarID_Switch, "Switch on/off");
 			IPS_SetParent($VarID_Switch, $this->InstanceID);
@@ -37,9 +37,9 @@
 				IPS_SetEventTriggerValue($eid_on, true);
 				IPS_SetEventScript($eid, "NEW_on(\$_IPS['TARGET']);");
 			}
-		*/		
+				
 		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
-		//	IPS_SetEventTrigger($eid_on, 4, $VarID_Switch);
+			IPS_SetEventTrigger($eid_on, 4, $VarID_Switch);
 			
         }
  
