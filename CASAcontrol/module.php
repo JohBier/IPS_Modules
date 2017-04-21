@@ -22,12 +22,12 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			//$VarID_Switch = @IPS_GetVariableID("Switch on/off");
-			//if ($VarID_Switch === false){
+			$VarID_Switch = @IPS_GetVariableID("Switch");
+			if ($VarID_Switch === false){
 				$VarID_Switch = @IPS_CreateVariable(0);
-				IPS_SetName($VarID_Switch, "Switch on/off");
+				IPS_SetName($VarID_Switch, "Switch");
 				IPS_SetParent($VarID_Switch, $this->InstanceID);
-			//}
+			}
 			$eid_on = @IPS_GetObjectIDByIdent("Switch ON", $this->InstanceID);
 			if ($eid_on === false){ 
 				$eid_on = IPS_CreateEvent(0);
