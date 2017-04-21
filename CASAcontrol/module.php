@@ -28,7 +28,7 @@
 				IPS_SetName($VarID_Switch, "Switch");
 				IPS_SetParent($VarID_Switch, $this->InstanceID);
 			//}
-			$eid_on = @IPS_GetObjectIDByIdent("Switch ON", $this->InstanceID);
+			$eid_on = @IPS_GetObjectIDByIdent("SwitchON", $this->InstanceID);
 			if ($eid_on === false){ 
 				$eid_on = IPS_CreateEvent(0);
 				IPS_SetParent($eid_on, $this->InstanceID);
