@@ -83,13 +83,13 @@
 
         }
 		
-		@public function off($id) 
+		public function off($id) 
 		{
 		
 			$this->send("12");
 
         }
-		@public function pair($id) 
+		public function pair($id) 
 		{
 			
 			$this->send("11");
