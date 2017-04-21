@@ -37,7 +37,7 @@
 				IPS_SetEventActive($eid_on, true);
 				IPS_SetEventTriggerValue($eid_on, true);
 				IPS_SetEventScript($eid_on, "NEW_on(\$_IPS['TARGET']);");
-			//}
+			}
 				
 		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
 			IPS_SetEventTrigger($eid_on, 4, $VarID_Switch);
