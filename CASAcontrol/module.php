@@ -78,20 +78,22 @@
 		{
 			
 			$this->send("11");
+			
+			return $response2;
 
         }
 		
-		public function off($id) 
+		@public function off($id) 
 		{
 		
-			$this->send($id, "12");
+			$this->send("12");
 
         }
-		public function pair($id) 
+		@public function pair($id) 
 		{
 			
-			$this->send($id, "11");
-			$this->send($id, "12");
+			$this->send("11");
+			$this->send("12");
 
         }
 		
