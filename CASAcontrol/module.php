@@ -33,9 +33,8 @@
 				$eid_on = IPS_CreateEvent(0);
 				IPS_SetParent($eid_on, $this->InstanceID);
 				IPS_SetName($eid_on, "On");
-				IPS_SetIdent($eid_on, "Switch ON");
+				IPS_SetIdent($eid_on, "SwitchON");
 				IPS_SetEventActive($eid_on, true);
-				IPS_SetEventTrigger($eid_on, true);
 				IPS_SetEventTriggerValue($eid_on, true);
 				IPS_SetEventScript($eid_on, "NEW_on(\$_IPS['TARGET']);");
 			//}
