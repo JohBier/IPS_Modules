@@ -74,26 +74,27 @@
 			curl_close($ch);
 		}
 		
-        public function on($id = null) 
+        public function on($id) 
 		{
 			
 			$this->send($id, "11");
 
         }
 		
-		public function off($id = null) 
+		public function off($id) 
 		{
 		
 			$this->send($id, "12");
 
         }
-		public function pair($id = null) 
+		public function pair($id) 
 		{
 			
 			$this->send($id, "11");
 			$this->send($id, "12");
 
         }
+		
     }
 
 
