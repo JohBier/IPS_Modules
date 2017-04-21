@@ -72,6 +72,8 @@
 
 			// close curl resource to free up system resources
 			curl_close($ch);
+			
+			print $response2;
 		}
 		
         public function on($id) 
@@ -79,7 +81,6 @@
 			
 			$this->send("11");
 			
-			return $response2;
 
         }
 		
