@@ -49,8 +49,16 @@
     }
   ],
   "status": [
-  { "code": 102, 
+    { "code": 101, 
+	"icon": "inactive", 
+	"caption": "Instanz wird erstellt" }
+  ]
+    { "code": 102, 
 	"icon": "active", 
 	"caption": "Instanz ist aktiv" }
+  ]
+  { "code": 104, 
+	"icon": "inactive", 
+	"caption": "Instanz ist inaktiv" }
   ]
 }
