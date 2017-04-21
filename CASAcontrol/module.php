@@ -29,15 +29,15 @@
 				IPS_SetParent($VarID_Switch, $this->InstanceID);
 			}
 			$eid_on = @IPS_GetObjectIDByIdent("Switch ON", $this->InstanceID);
-			if ($eid === false){ 
-				$eid = IPS_CreateEvent(0);
+			if ($eid_on === false){ 
+				$eid_on = IPS_CreateEvent(0);
 				IPS_SetParent($eid_on, $this->InstanceID);
 				IPS_SetName($eid_on, "On");
 				IPS_SetIdent($eid_on, "Switch ON");
 				IPS_SetEventActive($eid_on, true);
 				IPS_SetEventTrigger($eid_on, true);
 				IPS_SetEventTriggerValue($eid_on, true);
-				IPS_SetEventScript($eid, "NEW_on(\$_IPS['TARGET']);");
+				IPS_SetEventScript($eid_on, "NEW_on(\$_IPS['TARGET']);");
 			}
 				
 		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
