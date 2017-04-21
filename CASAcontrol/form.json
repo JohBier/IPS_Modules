@@ -13,7 +13,7 @@
     {
       "type": "ValidationTextBox",
       "name": "Kanal",
-      "caption": "Kanal hex(FF)",
+      "caption": "Kanal hex(FF)"
     },
     {
       "type": "Select",
@@ -64,4 +64,5 @@
 	"icon": "inactive", 
 	"caption": "Instanz ist inaktiv" 
 	}
+]
 }
