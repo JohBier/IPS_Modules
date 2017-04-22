@@ -22,7 +22,7 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			$VarID_Switch = @IPS_GetVariableIDByName("Switch", this->InstanceID);
+			$VarID_Switch = @IPS_GetVariableIDByName("Switch", $this->InstanceID);
 			if ($VarID_Switch === false){
 				$VarID_Switch = @IPS_CreateVariable(0);
 				IPS_SetName($VarID_Switch, "Switch");
