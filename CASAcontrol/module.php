@@ -22,8 +22,8 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			//$VarID_Switch = @IPS_GetVariableID("Switch");
-			//if ($VarID_Switch === false){
+			$VarID_Switch = @IPS_GetVariableIDByName("Switch", this->InstanceID);
+			if ($VarID_Switch === false){
 				$VarID_Switch = @IPS_CreateVariable(0);
 				IPS_SetName($VarID_Switch, "Switch");
 				IPS_SetParent($VarID_Switch, $this->InstanceID);
