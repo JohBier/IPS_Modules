@@ -42,6 +42,19 @@
 		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
 			IPS_SetEventTrigger($eid_on, 4, $VarID_Switch);
 			
+			$eid_off = @IPS_GetObjectIDByIdent("SwitchOFF", $this->InstanceID);
+			if ($eid_off === false){ 
+				$eid_off = IPS_CreateEvent(0);
+				IPS_SetParent($eid_off, $this->InstanceID);
+				IPS_SetName($eid_off, "Off");
+				IPS_SetIdent($eid_off, "SwitchOFF");
+				IPS_SetEventActive($eid_off, true);
+				IPS_SetEventTriggerValue($eid_off, false);
+				IPS_SetEventScript($eid_off, "NEW_off(\$_IPS['TARGET']);");
+			}
+				
+		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
+			IPS_SetEventTrigger($eid_off, 4, $VarID_Switch);
         }
  
         /*
