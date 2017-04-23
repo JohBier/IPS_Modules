@@ -39,7 +39,6 @@
 				IPS_SetEventScript($eid_on, "NEW_on(\$_IPS['TARGET']);");
 			}
 				
-		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
 			IPS_SetEventTrigger($eid_on, 4, $VarID_Switch);
 			
 			$eid_off = @IPS_GetObjectIDByIdent("SwitchOFF", $this->InstanceID);
@@ -53,8 +52,8 @@
 				IPS_SetEventScript($eid_off, "NEW_off(\$_IPS['TARGET']);");
 			}
 				
-		//	IPS_SetEventActive($eid_on, !(($triggerID_on == 0) || ());
 			IPS_SetEventTrigger($eid_off, 4, $VarID_Switch);
+			
         }
  
         /*
@@ -67,6 +66,7 @@
 		
 		public function send(String $Cmd)
 		{
+			
 			$Sn = $this->ReadPropertyString("Serial");
 			$Ip = $this->ReadPropertyString("IPAddr");
 			$Chan = $this->ReadPropertyString("Kanal");
@@ -114,7 +114,6 @@
 			
 			$this->send("11");
 			
-
         }
 		
 		public function off($id) 
@@ -128,7 +127,10 @@
 			
 			$this->send("11");
 			$this->send("12");
-
+			
+			if ($response2 === "0000"){
+				print "Pairing abgeschlossen";
+			}
         }
 		
     }
