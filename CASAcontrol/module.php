@@ -22,6 +22,10 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
+			if (NEW_on($this->InstanceID, (boolean)$_IPS['VALUE'])) {
+				SetValue($_IPS['VARIABLE'], $_IPS['VALUE']);
+			}
+			
 			$VarID_Switch = @IPS_GetVariableIDByName("Switch", $this->InstanceID);
 			if ($VarID_Switch === false){
 				$VarID_Switch = @IPS_CreateVariable(0);
@@ -128,9 +132,6 @@
 			$this->send("11");
 			$this->send("12");
 			
-			if ($this->$response2 === "0000"){
-				print "Pairing abgeschlossen";
-			}
         }
 		
     }
