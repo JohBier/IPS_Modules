@@ -56,7 +56,6 @@
 				
 			IPS_SetEventTrigger($eid_off, 4, $VarID_Switch);
 			
-			SetValue($_IPS['Switch'], $_IPS['VALUE']);
         }
  
         /*
