@@ -38,7 +38,7 @@
 				IPS_SetIdent($eid_on, "SwitchON");
 				IPS_SetEventActive($eid_on, true);
 				IPS_SetEventTriggerValue($eid_on, true);
-				IPS_SetEventScript($eid_on, "NEW_on(\$_IPS['TARGET']);");
+				IPS_SetEventScript($eid_on, "CASA_on(\$_IPS['TARGET']);");
 			}
 				
 			IPS_SetEventTrigger($eid_on, 4, $VarID_Switch);
@@ -51,7 +51,7 @@
 				IPS_SetIdent($eid_off, "SwitchOFF");
 				IPS_SetEventActive($eid_off, true);
 				IPS_SetEventTriggerValue($eid_off, false);
-				IPS_SetEventScript($eid_off, "NEW_off(\$_IPS['TARGET']);");
+				IPS_SetEventScript($eid_off, "CASA_off(\$_IPS['TARGET']);");
 			}
 				
 			IPS_SetEventTrigger($eid_off, 4, $VarID_Switch);

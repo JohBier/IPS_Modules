@@ -35,17 +35,17 @@
     {
       "type": "Button",
       "label": "Pair Modul",
-      "onClick": "@NEW_pair($id);"
+      "onClick": "@CASA_pair($id);"
     },
     {
       "type": "Button",
       "label": "Modul an",
-      "onClick": "@NEW_on($id);"
+      "onClick": "@CASA_on($id);"
     },
     {
       "type": "Button",
       "label": "Modul aus",
-      "onClick": "@NEW_off($id);"
+      "onClick": "@CASA_off($id);"
     }
   ],
   "status": [

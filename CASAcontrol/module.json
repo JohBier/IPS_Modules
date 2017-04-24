@@ -2,13 +2,13 @@
   "id": "{E1878F0B-D68F-4D80-BC95-322368947823}",
   "name": "CASAcontrol",
   "type": 3,
-  "vendor": "",
+  "vendor": "CASA-Control",
   "aliases": [
-    "PowerPlug",
-    "PowerSocket"
+    "Funk-Steckdose NX-5063-675",
+    "Funk-Lampenfassung NX-5063-675"
   ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "NEW"
+  "prefix": "CASA"
 }
