@@ -22,8 +22,8 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			if (NEW_on($this->InstanceID, (boolean)$_IPS['VALUE'])) {
-				SetValue($_IPS['VARIABLE'], $_IPS['VALUE']);
+			if (NEW_on($this->InstanceID, (boolean)$_IPS['True'])) {
+				SetValue($_IPS['Switch'], $_IPS['True']);
 			}
 			
 			$VarID_Switch = @IPS_GetVariableIDByName("Switch", $this->InstanceID);
