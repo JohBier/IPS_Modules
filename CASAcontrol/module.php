@@ -23,8 +23,6 @@
             parent::ApplyChanges();
 			
 			
-			SetValue($_IPS['VARIABLE'], $_IPS['VALUE']);
-			
 			
 			$VarID_Switch = @IPS_GetVariableIDByName("Switch", $this->InstanceID);
 			if ($VarID_Switch === false){
@@ -58,6 +56,7 @@
 				
 			IPS_SetEventTrigger($eid_off, 4, $VarID_Switch);
 			
+			SetValue($_IPS['Switch'], $_IPS['VALUE']);
         }
  
         /*
