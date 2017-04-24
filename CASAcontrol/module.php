@@ -128,7 +128,7 @@
 			$this->send("11");
 			$this->send("12");
 			
-			if ($response2 === "0000"){
+			if ($this->$response2 === "0000"){
 				print "Pairing abgeschlossen";
 			}
         }
