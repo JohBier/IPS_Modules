@@ -22,9 +22,9 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			if (NEW_on($this->InstanceID, (boolean)$_IPS['True'])) {
-				SetValue($_IPS['Switch'], $_IPS['True']);
-			}
+			
+			SetValue($_IPS['VARIABLE'], $_IPS['VALUE']);
+			
 			
 			$VarID_Switch = @IPS_GetVariableIDByName("Switch", $this->InstanceID);
 			if ($VarID_Switch === false){
