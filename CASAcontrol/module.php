@@ -13,7 +13,7 @@
 			$this->RegisterPropertyString("IPAddr", "192.168.0.0");
 			$this->RegisterPropertyString("Serial", "023100000000");
 			$this->RegisterPropertyString("Kanal", "00");
-			$this->RegisterPropertyString("Modul", 0);			
+			$this->RegisterPropertyInteger("Modul", 0);			
  
         }
  
@@ -23,9 +23,9 @@
             parent::ApplyChanges();
 			
 			$InstanceName = IPS_GetProperty($this->InstanceID, "Modul");
-			if ($InstanceName === "Funk-Steckdose NX-5063-675"){
+			if ($InstanceName === 0){
 				IPS_SetIdent($this->InstanceID, "Funk-Steckdose NX-5063-675");
-			}else if ($InstanceName === "Funk-Lampenfassung NX-5063-675"){
+			}else if ($InstanceName === 1){
 				IPS_SetIdent($this->InstanceID, "Funk-Lampenfassung NX-5063-675");
 			}
 			
