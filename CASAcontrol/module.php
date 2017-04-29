@@ -61,6 +61,8 @@
 				
 			IPS_SetEventTrigger($eid_off, 4, $VarID_Switch);
 			
+			$this->SetStatus(102)
+			
         }
  
         /*
@@ -70,6 +72,7 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
+		
 		
 		public function send(String $Cmd)
 		{
