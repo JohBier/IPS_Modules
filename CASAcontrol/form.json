@@ -13,7 +13,7 @@
     {
       "type": "ValidationTextBox",
       "name": "Kanal",
-      "caption": "Kanal "00" bis "ff""
+      "caption": "Kanal ´00´ bis ´ff`"
     },
     {
       "type": "Select",
