@@ -21,11 +21,11 @@
       "caption": "Modul",
       "options": [
         {
-          "label": "PowerPlug",
+          "label": "Funk-Steckdose NX-5063-675",
           "value": 0
         },
         {
-          "label": "Socket",
+          "label": "Funk-Lampenfassung NX-5063-675",
           "value": 1
         }
       ]
