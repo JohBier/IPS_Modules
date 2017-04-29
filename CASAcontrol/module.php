@@ -75,37 +75,19 @@
 			$Mod = $this->ReadPropertyString("Modul");
 	
 			$url1 = "http://".$Ip."/txcomm.asp";
-
-			// create curl resource
-			$ch = curl_init();
-
-			// set url
-			curl_setopt($ch, CURLOPT_URL, $url1);
-
-			//return the transfer as a string 
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-			// $output contains the output string
-			$response1 = curl_exec($ch);
-
-			// close curl resource to free up system resources
-			curl_close($ch);
+			
+			$ch = curl_init();								// create curl resource
+			curl_setopt($ch, CURLOPT_URL, $url1); 			// set url
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);	// return the transfer as a string 
+			$response1 = curl_exec($ch);					// $output contains the output string
+			curl_close($ch);								// close curl resource to free up system resources
 
 			$url2 = "http://".$Ip."/goform/commtx?command=:02:".$Chan.":00:".$Cmd."&serialn=".$Sn;
 
-			// create curl resource
 			$ch = curl_init();
-
-			// set url
 			curl_setopt($ch, CURLOPT_URL, $url2);
-
-			//return the transfer as a string 
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-			// $output contains the output string
 			$response2 = curl_exec($ch);
-
-			// close curl resource to free up system resources
 			curl_close($ch);
 			
 			print $response2;
@@ -133,18 +115,3 @@
         }
 		
     }
-
-
-
-	/*	$sn_id = IPS_GetVariableIDByName("Seriennummer", 57518);
-		print_r(IPS_GetVariable($sn_id));
-		$sn_value = IPS_GetVariable($sn_id)["VariableValue"];
-		print "array Eintrag (serial): " . $sn_value . "\n";
-
-		$sn_id = IPS_GetVariableIDByName("IP_Addr", 57518);
-		print_r(IPS_GetVariable($sn_id));
-		$sn_value = IPS_GetVariable($sn_id)["VariableValue"];
-		print "array Eintrag (IP): " . $sn_value . "\n";
-	*/	
-
-?>
