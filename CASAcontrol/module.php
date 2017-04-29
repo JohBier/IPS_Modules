@@ -24,9 +24,9 @@
 			
 			$InstanceName = IPS_GetProperty($this->InstanceID, "Modul");
 			if ($InstanceName === "Funk-Steckdose NX-5063-675"){
-				IPS_SetName($this->InstanceID, "Funk-Steckdose NX-5063-675");
+				IPS_SetIdent($this->InstanceID, "Funk-Steckdose NX-5063-675");
 			}else if ($InstanceName === "Funk-Lampenfassung NX-5063-675"){
-				IPS_SetName($this->InstanceID, "Funk-Lampenfassung NX-5063-675");
+				IPS_SetIdent($this->InstanceID, "Funk-Lampenfassung NX-5063-675");
 			}
 			
 			$VarID_Switch = @IPS_GetVariableIDByName("Switch", $this->InstanceID);
