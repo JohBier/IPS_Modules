@@ -118,7 +118,7 @@
 		{
 			
 			$this->send("11");
-			sleep(1);
+			sleep(2);
 			$this->send("12");
 			
         }
