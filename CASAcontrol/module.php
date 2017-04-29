@@ -118,6 +118,7 @@
 		{
 			
 			$this->send("11");
+			sleep(1);
 			$this->send("12");
 			
         }
