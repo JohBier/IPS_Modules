@@ -23,9 +23,9 @@
             parent::ApplyChanges();
 			
 			$InstanceName = IPS_GetProperty($this->InstanceID, "Modul");
-			if ($InstanceName === 0){
+			if ($InstanceName === "Funk-Steckdose NX-5063-675"){
 				IPS_SetName($this->InstanceID, "Funk-Steckdose NX-5063-675");
-			}else if ($InstanceName === 1){
+			}else if ($InstanceName === "Funk-Lampenfassung NX-5063-675"){
 				IPS_SetName($this->InstanceID, "Funk-Lampenfassung NX-5063-675");
 			}
 			
