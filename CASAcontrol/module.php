@@ -22,9 +22,9 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 			
-			if (this->GetProperty("Modul") === 0){
+			if (IPS_GetProperty($this->InstanceID, "Modul") === 0){
 				IPS_SetName($this->InstanceID, "Funk-Steckdose NX-5063-675");
-			else if(this->GetProperty("Modul") === 1)
+			else if(IPS_GetProperty($this->InstanceID, "Modul") === 1)
 				IPS_SetName($this->InstanceID, "Funk-Lampenfassung NX-5063-675");
 			}
 			
